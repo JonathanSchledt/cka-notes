@@ -1,6 +1,7 @@
 # ClusterIP
 
 ## Concept
+
 Conntects the layers of a microservice application (e.g. back-end, redis)
 
 ## Key Commands
@@ -22,7 +23,7 @@ spec:
   type: ClusterIP #will be assumed as ClusterIP if omitted
   ports:
     - targetPort: 80
-      port: 80 
+      port: 80
   selector:
     app: myapp
     type: back-end

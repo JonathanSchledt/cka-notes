@@ -1,6 +1,7 @@
 # NodePort
 
 ## Concept
+
 Mapping a Port on the Node to a Port on the Pod
 
 Target Port: Port on the Pod

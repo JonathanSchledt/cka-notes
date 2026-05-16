@@ -1,6 +1,7 @@
 # Replication Set
 
 ## Concept
+
 Replication Controller (old) -> ReplicaSet (new)
 ReplicaSet needs selector
 
@@ -11,7 +12,7 @@ k create -f replicaset-definition.yaml
 
 k get rs
 
-k scale -replicas=6 -f replicaset-definition.yaml
+k scale --replicas=6 -f replicaset-definition.yaml
 ```
 
 ## Minimal YAML Example

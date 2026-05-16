@@ -1,6 +1,7 @@
 # ReplicationController
 
 ## Concept
+
 Replication Controller (old) -> ReplicaSet (new)
 
 ## Key Commands

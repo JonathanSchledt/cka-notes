@@ -1,6 +1,7 @@
 # Deployments
 
 ## Concept
+
 Higher Level than ReplicaSet
 
 ## Key Commands

@@ -15,7 +15,7 @@ kind: Pod
 metadata:
   name: myapp-pod
 spec:
-  container:
+  containers:
     - name: data-processor
       image: data-processor
       resources:

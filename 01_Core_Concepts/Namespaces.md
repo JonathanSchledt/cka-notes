@@ -1,6 +1,7 @@
 # Namespaces
 
 ## Concept
+
 - Logical Isolation of Resources (e.g default, kube-system, kube-public, dev, int, prod)
 - Namespaces can have their own assigned policies and resources
 
@@ -15,9 +16,9 @@ k create -f namespace-dev.yaml
 k create ns dev
 
 #switch context
-k config set-context $(k config current-context) --namespace=dev 
+k config set-context $(k config current-context) --namespace=dev
 
-k get pods --namepace=kube-system
+k get pods --namespace=kube-system
 
 k get pods --all-namespaces
 
