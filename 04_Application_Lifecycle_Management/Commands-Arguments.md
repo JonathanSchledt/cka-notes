@@ -19,7 +19,7 @@ Kubernets:
 # docker run --entrypoint sleep2.0 ubuntu-sleeper 10 -> sleep2.0 10
 FROM Ubuntu
 ENTRYPOINT ["sleep"]
-CMD["5"]
+CMD ["5"]
 ```
 
 ## Minimal YAML Example

@@ -23,7 +23,7 @@ k drain node-1
 
 apt-get upgrade -y kubeadm=1.12.0-00
 
-apt-get upgrade -y kubelet=1.12.00-00
+apt-get upgrade -y kubelet=1.12.0-00
 
 kubeadm upgrade node config --kubelet-version v1.12.0
 

@@ -6,7 +6,7 @@
 
 2. Bind User to Role
 
-Namspaced (default ns if not provided)
+Namespaced (default ns if not provided)
 
 ## Key Commands
 
@@ -43,7 +43,7 @@ rules:
     verbs: ["list", "get", "create", "update", "delete"]
     resourceNames: ["blue", "orange"]
   - apiGroups: [""]
-    resources: ["ConfigMap"]
+    resources: ["configmaps"]
     verbs: ["create"]
 
 # devuser-developer-binding.yaml

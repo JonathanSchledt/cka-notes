@@ -1,7 +1,7 @@
 # Taints and Tolerations
 
 ## Concept
-- Set Restrcitions on which Pods can be scheduled on which Nodes
+- Set Restrictions on which Pods can be scheduled on which Nodes
 - Pods have no Tolerations by default
 
 Taint: Set on Nodes

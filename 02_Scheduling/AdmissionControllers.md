@@ -6,7 +6,7 @@ kube-apiserver -> Authentication -> Authorization -> Admission Controllers -> Cr
 
 Help implement better security measures to enforce how a cluster is used
 
-Mutating Admission Controllers: change the request -> Mutating dmission Webhook
+Mutating Admission Controllers: change the request -> Mutating Admission Webhook
 
 Validation Admission Controllers: validate the request and allow or deny it -> Validating Admission Webhook
 

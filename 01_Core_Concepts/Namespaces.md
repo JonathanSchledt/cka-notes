@@ -6,7 +6,7 @@
 - Namespaces can have their own assigned policies and resources
 
 Inside current Namespace -> Address Resources by first name: mysql.connect("db-service")
-Outside current Namespace -> Address Resources by firs + last name: mysql.connect("db-service.dev.svc.cluster.local")
+Outside current Namespace -> Address Resources by first + last name: mysql.connect("db-service.dev.svc.cluster.local")
 
 ## Key Commands
 

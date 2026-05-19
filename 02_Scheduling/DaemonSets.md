@@ -30,7 +30,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      type: monitoring-agent
+      app: monitoring-agent
   template:
     metadata:
       labels:

@@ -2,7 +2,7 @@
 
 ## Concept
 
-Taking down nodes that are part of the cluster for maintenance (upgrading base software, applying securty patches etc.)
+Taking down nodes that are part of the cluster for maintenance (upgrading base software, applying security patches etc.)
 
 ## Key Commands
 

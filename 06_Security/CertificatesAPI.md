@@ -9,7 +9,7 @@ Certificate signing requests are send to the Kubernets Certificates API:
 3. Approve Requests
 4. Share Certs to Users
 
-Controller-Manager is responsible for all certiciate related operations
+Controller-Manager is responsible for all certificate related operations
 
 ## Key Commands
 
@@ -52,10 +52,4 @@ spec:
     V6RVJNQThHQTFVRUF3d0libVYzTFhWelpYSXdnZ0VpTUEwR0NTcUdTSWIzRFFFQgpBUVVB
     QTRJQkR3QXdnZ0VLQW9JQkFRRE8wV0pXK0RYc0FKU0lyanBObzV2UklCcGxuemcrNnhjOS
     tVVndrS2kwCkxmQzI3dCsxZUVuT041TXVxOTloZXZtTUVPbnJ
-  conditions:
-    - type: Approved
-      status: "True"
-      reason: KubectlApprove
-      message: "This CSR was approved by kubectl certificate approve."
-      lastUpdateTime: "2026-02-03T11:46:10Z"
 ```

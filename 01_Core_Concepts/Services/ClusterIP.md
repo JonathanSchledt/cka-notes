@@ -2,7 +2,7 @@
 
 ## Concept
 
-Conntects the layers of a microservice application (e.g. back-end, redis)
+Connects the layers of a microservice application (e.g. back-end, redis)
 
 ## Key Commands
 

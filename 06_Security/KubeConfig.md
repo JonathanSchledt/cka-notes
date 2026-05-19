@@ -13,7 +13,7 @@ KubeConfig File ($HOME/.kube/config)
 ```bash
 k config view
 
-k config view -kubeconfig=my-custom-config
+k config view --kubeconfig=my-custom-config
 
 k config use-context prod-user@production
 ```

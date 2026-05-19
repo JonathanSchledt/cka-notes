@@ -3,7 +3,7 @@
 ## Key Commands
 
 ```bash
-# all certifictes, keys in cluster provisioned with kubeadm
+# all certificates, keys in cluster provisioned with kubeadm
 cat /etc/kubernetes/manifests/kube-apiserver.yaml
 
 # decodes the kube-apiserver's serving certificate and prints it
