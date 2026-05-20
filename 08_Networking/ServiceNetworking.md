@@ -13,14 +13,3 @@ iptables -L -t nat | grep my-service
 # kube-proxy logs
 cat /var/log/kube-proxy
 ```
-
-## Minimal YAML Example
-
-```yaml
-apiVersion: v1
-kind: Example
-metadata:
-  name: example
-spec:
-  # ...
-```
