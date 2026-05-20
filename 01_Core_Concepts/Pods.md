@@ -20,6 +20,9 @@ k delete pod myapp-pod
 k run redis --image=redis --dry-run=client -o yaml > redis.yaml
 
 k create -f redis.yaml
+
+# run command from inside pod
+k exec -it pod-name
 ```
 
 ## Minimal YAML Example
