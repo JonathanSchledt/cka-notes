@@ -42,6 +42,9 @@ spec:
     - name: http
       protocol: HTTP
       port: 80
+      allowedRoutes:
+        namespaces:
+          from: All
 
 # HTTP Route
 apiVersion: gateway.networking.k8s.io/v1
