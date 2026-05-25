@@ -59,4 +59,26 @@ roleRef:
   kind: Role
   name: developer
   apiGroup: rbac.authorization.k8s.io
+
+# bind a Role to a ServiceAccount (more common in practice)
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: app-sa-binding
+  namespace: dev
+subjects:
+  - kind: ServiceAccount
+    name: app-sa
+    namespace: dev
+roleRef:
+  kind: Role
+  name: developer
+  apiGroup: rbac.authorization.k8s.io
 ```
+
+## Built-in Cluster Roles
+
+- view: read-only
+- edit: read/write most resources (no RBAC)
+- admin: full namespace admin (no RBAC, no resource quota)
+- cluster-admin: full cluster access

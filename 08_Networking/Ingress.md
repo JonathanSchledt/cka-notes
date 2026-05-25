@@ -7,12 +7,24 @@ Single entry point to route external traffic to internal services based on URL p
 Ingress Controller: Deployment of a reverse proxy (e.g. nginx) - not included by default
 Ingress Resource: Set of routing rules
 
+pathType:
+
+- Prefix: match URL prefix (most common)
+- Exact: full match
+- ImplementationSpecific: depends on controller
+
+ingressClassName: which controller handles this Ingress (replaces old `kubernetes.io/ingress.class` annotation)
+
 ## Key Commands
 
 ```bash
 k get ingress
 
+k get ingressclass
+
 k create ingress ingress-test --rule="wear.example.com/=wear-service:80"
+
+k create ingress web --rule="example.com/app*=web-svc:80" --class=nginx
 ```
 
 ## Minimal YAML Example
@@ -91,8 +103,14 @@ kind: Ingress
 metadata:
   name: ingress-wear-watch
 spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - example.com
+      secretName: example-tls # kubernetes.io/tls secret
   rules:
-    - http:
+    - host: example.com
+      http:
         paths:
           - path: /wear
             pathType: Prefix
