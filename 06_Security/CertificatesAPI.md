@@ -21,7 +21,7 @@ openssl genrsa -out jane.key 2048
 openssl req -new -key jane.key -subj "/CN=jane" -out jane.csr
 
 # encode to base64
-cat jane.csr | base64
+cat jane.csr | base64 -w 0
 
 k get csr
 
