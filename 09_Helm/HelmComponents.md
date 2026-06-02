@@ -18,6 +18,8 @@ helm search repo wordpress
 
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
+helm repo remove bitnami
+
 helm repo list
 
 helm list
