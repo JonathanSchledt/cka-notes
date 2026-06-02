@@ -27,13 +27,22 @@ patches:
         path: /metadata/name
         value: web-deployment
 
-# kustomization.yaml - strategic merge patch
+# kustomization.yaml - strategic merge
+resources:
+  - api-depl.yaml
+
 patches:
-  - patch: |-
-      apiVersion: apps/v1
-      kind: Deployment
-      metadata:
-        name: api-deployment
-      spec:
-        replicas: 5
+  - path: api-patch.yaml
+
+# api-patch.yaml - strategic merge
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  template:
+    spec:
+      containers:
+        - $patch: delete
+          name: memcached
 ```
