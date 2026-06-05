@@ -15,6 +15,18 @@ Steps:
 ## Key Commands
 
 ```bash
+# node kernel networking prerequisites (persist across reboots)
+sudo tee -a /etc/sysctl.conf >/dev/null <<'EOF'
+net.ipv4.ip_forward = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+
+sudo sysctl -p
+
+# verify
+sysctl net.ipv4.ip_forward
+sysctl net.bridge.bridge-nf-call-iptables
+
 # master
 kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=192.168.1.10
 
