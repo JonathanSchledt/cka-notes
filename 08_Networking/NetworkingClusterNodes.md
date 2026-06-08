@@ -18,6 +18,12 @@ ip route
 # add static route via gateway 192.168.2.1
 ip route add 192.168.1.0/24 via 192.168.2.1
 
+# check if IP forwarding/routing is enabled
+cat /proc/sys/net/ipv4/ip_forward
+
+# persist changes across reboots im /etc/sysctl.conf
+net.ipv4.ip_forward = 1
+
 # show ARP cache (IP <-> MAC mappings)
 arp
 
@@ -26,7 +32,4 @@ route
 
 # show listening TCP ports and owning processes
 netstat -plnt
-
-# check if IP forwarding/routing is enabled
-cat /proc/sys/net/ipv4/ip_forward
 ```
