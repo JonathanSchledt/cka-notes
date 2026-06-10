@@ -15,6 +15,8 @@ pathType:
 
 ingressClassName: which controller handles this Ingress (replaces old `kubernetes.io/ingress.class` annotation)
 
+ssl-redirect: nginx.ingress.kubernetes.io/ssl-redirect: "true"
+
 ## Key Commands
 
 ```bash
@@ -102,6 +104,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-wear-watch
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: nginx
   tls:

@@ -4,6 +4,8 @@
 
 Service: Virtual Cluster wide Objects
 
+IP ranges configured in /etc/kubernetes/manifests/kube-controller-manager.yaml
+
 ## Key Commands
 
 ```bash

@@ -2,16 +2,16 @@
 
 ## Concept
 
-Deployed as Pod in kube-system namespace (as replicaset in deployment)
+Deployed as Pod in kube-system namespace (as ReplicaSet in deployment)
 
 ## Key Commands
 
 ```bash
 # address service within namespace
-curl hhtp://web-servce
+curl http://web-service
 
 # address service outside namespace
-curl http://web-service.app.scv.cluster.local
+curl http://web-service.app.svc.cluster.local
 
 # points to the DNS server
 cat /etc/resolv.conf
