@@ -23,6 +23,7 @@ cat /proc/sys/net/ipv4/ip_forward
 
 # persist changes across reboots im /etc/sysctl.conf
 net.ipv4.ip_forward = 1
+sysctl -p # necessary to persist
 
 # show ARP cache (IP <-> MAC mappings)
 arp
